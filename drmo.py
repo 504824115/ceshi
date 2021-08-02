@@ -72,6 +72,7 @@ while True:
 
 
 """
+"""
 username = input("请输入账号")
 password = input("请输入账号")
 if len(username) >=5 and  len(username) <=8 :
@@ -85,3 +86,26 @@ if len(username) >=5 and  len(username) <=8 :
         
 else:
     print("账号长度必须在5-8位中间")
+"""
+
+
+
+class Car():
+    def __init__(self,pinpai,yanse,neishi):
+        self.pingpai = pinpai
+        self.yanse = yanse
+        self.neishi = neishi
+    def gongneg(self):
+        print("飞行")
+    def xingnneg(self):
+        print("跑得快")
+# qiche = Car("奥迪","红色","星空顶")
+# qiche.gongneg()
+# qiche.xingnneg()
+
+
+class Tcar(Car):
+    def gongneg(self):
+        print("游泳")
+dakache = Tcar("奔驰","蓝色","星空顶")
+dakache.gongneg()
